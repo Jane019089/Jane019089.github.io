@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
+<title>{pboot:if('{sort:title}'=='')}{pboot:pagetitle}{else}{sort:title}{/pboot:if}</title>
+<meta name="keywords" content="{pboot:if('{sort:keywords}'=='')}{pboot:pagekeywords}{else}{sort:keywords}{/pboot:if}">
+<meta name="description" content="{pboot:if('{sort:description}'=='')}{pboot:pagedescription}{else}{sort:description}{/pboot:if}">
+<link rel="stylesheet" type="text/css" href="{pboot:sitedomain}/skin/css/style.css"/>
+</head>
+<body>
+{include file=head.html}
+<div class="mip-wrap">
+  <div class="mip-container">
+    <div class="mip-detail-main">
+      <div class="mip-detail-title">
+        <h1>{sort:name}</h1>
+      </div>
+      <div class="mip-detail-content">
+        {content:content}
+      </div>
+    </div>
+  </div>
+  {include file=right.html}
+</div>
+{include file=foot.html}
+</body>
+</html>
